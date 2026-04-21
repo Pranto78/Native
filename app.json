@@ -8,6 +8,9 @@
     "scheme": "oreo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "updates": {
+  "enabled": false
+},
     "ios": {
       "supportsTablet": true
     },
@@ -44,5 +47,7 @@
       "typedRoutes": true,
       "reactCompiler": true
     }
+
+    
   }
 }
