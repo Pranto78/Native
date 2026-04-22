@@ -1,15 +1,5 @@
-import "@/globals.css";
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
- 
-export default function App() {
-  return (
-    <View className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-bold text-accent">
-        Welcome to Nativewind!
-      </Text>
+import { Redirect } from "expo-router";
 
-      <Link className="mt-4 bg-primary p-5 rounded-2xl text-white" href={"/onboarding"}>Go to Onboarding</Link>
-    </View>
-  );
+export default function Index() {
+  return <Redirect href="/(tabs)" />;
 }
