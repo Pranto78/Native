@@ -2,9 +2,13 @@ import { icons } from "./icons";
 
 export const tabs: AppTab[] = [
   { name: "index", title: "Home", icon: icons.home },
+  { name: "settings", title: "Settings", icon: icons.setting },
+];
+
+// Protected tabs - accessible after authentication
+export const protectedTabs: AppTab[] = [
   { name: "subscriptions", title: "Subscriptions", icon: icons.wallet },
   { name: "insights", title: "Insights", icon: icons.activity },
-  { name: "settings", title: "Settings", icon: icons.setting },
 ];
 
 export const HOME_USER = {
@@ -45,6 +49,51 @@ export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
 
 export const HOME_SUBSCRIPTIONS: Subscription[] = [
   {
+    id: "spotify",
+    icon: icons.spotify,
+    name: "Spotify",
+    plan: "Premium",
+    category: "Music",
+    paymentMethod: "Visa ending in 8530",
+    status: "active",
+    startDate: "2025-04-25T10:00:00.000Z",
+    price: 5.99,
+    currency: "USD",
+    billing: "Monthly",
+    renewalDate: "2026-04-27T10:00:00.000Z",
+    color: "#1DB954",
+  },
+  {
+    id: "notion",
+    icon: icons.notion,
+    name: "Notion",
+    plan: "Plus Plan",
+    category: "Productivity",
+    paymentMethod: "Mastercard ending in 2408",
+    status: "active",
+    startDate: "2025-04-25T10:00:00.000Z",
+    price: 12.0,
+    currency: "USD",
+    billing: "Monthly",
+    renewalDate: "2026-04-29T10:00:00.000Z",
+    color: "#6366F1",
+  },
+  {
+    id: "figma",
+    icon: icons.figma,
+    name: "Figma",
+    plan: "Professional",
+    category: "Design",
+    paymentMethod: "Amex ending in 1010",
+    status: "active",
+    startDate: "2025-04-25T10:00:00.000Z",
+    price: 15.0,
+    currency: "USD",
+    billing: "Monthly",
+    renewalDate: "2026-05-01T10:00:00.000Z",
+    color: "#0ACE78",
+  },
+  {
     id: "adobe-creative-cloud",
     icon: icons.adobe,
     name: "Adobe Creative Cloud",
@@ -56,7 +105,7 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
     price: 77.49,
     currency: "USD",
     billing: "Monthly",
-    renewalDate: "2026-03-20T10:00:00.000Z",
+    renewalDate: "2026-04-27T10:00:00.000Z",
     color: "#f5c542",
   },
   {
@@ -71,7 +120,7 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
     price: 9.99,
     currency: "USD",
     billing: "Monthly",
-    renewalDate: "2026-03-24T10:00:00.000Z",
+    renewalDate: "2026-04-29T10:00:00.000Z",
     color: "#e8def8",
   },
   {
@@ -81,12 +130,12 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
     plan: "Pro Plan",
     category: "AI Tools",
     paymentMethod: "Amex ending in 1010",
-    status: "paused",
+    status: "active",
     startDate: "2025-06-27T10:00:00.000Z",
     price: 20.0,
     currency: "USD",
     billing: "Monthly",
-    renewalDate: "2026-03-27T10:00:00.000Z",
+    renewalDate: "2026-05-01T10:00:00.000Z",
     color: "#b8d4e3",
   },
   {
@@ -96,12 +145,12 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
     plan: "Yearly Access",
     category: "Design",
     paymentMethod: "Visa ending in 7784",
-    status: "cancelled",
+    status: "active",
     startDate: "2024-04-02T10:00:00.000Z",
     price: 119.99,
     currency: "USD",
     billing: "Yearly",
-    renewalDate: "2026-04-02T10:00:00.000Z",
+    renewalDate: "2026-05-10T10:00:00.000Z",
     color: "#b8e8d0",
   },
 ];
