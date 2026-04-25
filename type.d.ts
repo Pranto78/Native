@@ -12,6 +12,24 @@ declare global {
     icon: ImageSourcePropType;
   }
 
+  interface SubscriptionPlan {
+    id: string;
+    name: string;
+    price: number;
+    currency?: string;
+    billing?: string;
+    features: string[];
+  }
+
+  interface SubscriptionPackage {
+    id: string;
+    icon: ImageSourcePropType;
+    name: string;
+    description: string;
+    plans: SubscriptionPlan[];
+    color?: string;
+  }
+
   interface Subscription {
     id: string;
     icon: ImageSourcePropType;

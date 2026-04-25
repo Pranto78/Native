@@ -114,10 +114,10 @@ const SignUp = () => {
                             <View className="auth-brand-block">
                                 <View className="auth-logo-wrap">
                                     <View className="auth-logo-mark">
-                                        <Text className="auth-logo-mark-text">R</Text>
+                                        <Text className="auth-logo-mark-text">O</Text>
                                     </View>
                                     <View>
-                                        <Text className="auth-wordmark">Recurrly</Text>
+                                        <Text className="auth-wordmark">Oreo</Text>
                                         <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
                                     </View>
                                 </View>
@@ -190,10 +190,10 @@ const SignUp = () => {
                         <View className="auth-brand-block">
                             <View className="auth-logo-wrap">
                                 <View className="auth-logo-mark">
-                                    <Text className="auth-logo-mark-text">R</Text>
+                                    <Text className="auth-logo-mark-text">O</Text>
                                 </View>
                                 <View>
-                                    <Text className="auth-wordmark">Recurrly</Text>
+                                    <Text className="auth-wordmark">Oreo</Text>
                                     <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
                                 </View>
                             </View>

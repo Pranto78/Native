@@ -1,10 +1,12 @@
-import { create } from "zustand";
 import { HOME_SUBSCRIPTIONS } from "@/constants/data";
+import { create } from "zustand";
 
 interface SubscriptionStore {
   subscriptions: Subscription[];
   addSubscription: (subscription: Subscription) => void;
   setSubscriptions: (subscriptions: Subscription[]) => void;
+  purchaseSubscription: (subscription: Subscription) => void;
+  removeSubscription: (id: string) => void;
 }
 
 export const useSubscriptionStore = create<SubscriptionStore>((set) => ({
@@ -12,4 +14,12 @@ export const useSubscriptionStore = create<SubscriptionStore>((set) => ({
   addSubscription: (subscription) =>
     set((state) => ({ subscriptions: [subscription, ...state.subscriptions] })),
   setSubscriptions: (subscriptions) => set({ subscriptions }),
+  purchaseSubscription: (subscription) =>
+    set((state) => ({
+      subscriptions: [subscription, ...state.subscriptions],
+    })),
+  removeSubscription: (id: string) =>
+    set((state) => ({
+      subscriptions: state.subscriptions.filter((sub) => sub.id !== id),
+    })),
 }));

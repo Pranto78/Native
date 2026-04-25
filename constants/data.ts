@@ -47,6 +47,135 @@ export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
   },
 ];
 
+export const SUBSCRIPTION_PACKAGES: SubscriptionPackage[] = [
+  {
+    id: "spotify",
+    icon: icons.spotify,
+    name: "Spotify",
+    description: "Premium Music Streaming",
+    plans: [
+      {
+        id: "spotify-free",
+        name: "Free",
+        price: 0,
+        currency: "USD",
+        features: ["Standard quality", "Ads", "Limited skips"],
+      },
+      {
+        id: "spotify-premium",
+        name: "Premium",
+        price: 5.99,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "High quality audio",
+          "No ads",
+          "Offline listening",
+          "Unlimited skips",
+        ],
+      },
+      {
+        id: "spotify-family",
+        name: "Family",
+        price: 14.99,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "Up to 6 accounts",
+          "High quality audio",
+          "No ads",
+          "Family Mix playlist",
+        ],
+      },
+    ],
+    color: "#1DB954",
+  },
+  {
+    id: "notion",
+    icon: icons.notion,
+    name: "Notion",
+    description: "All-in-one workspace",
+    plans: [
+      {
+        id: "notion-free",
+        name: "Free",
+        price: 0,
+        currency: "USD",
+        features: ["Unlimited blocks", "Basic templates"],
+      },
+      {
+        id: "notion-plus",
+        name: "Plus",
+        price: 12.0,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "30GB file uploads",
+          "Priority support",
+          "Advanced integrations",
+          "Guest invitations",
+        ],
+      },
+      {
+        id: "notion-business",
+        name: "Business",
+        price: 27.0,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "1TB file uploads",
+          "Advanced security",
+          "Advanced API",
+          "Admin controls",
+        ],
+      },
+    ],
+    color: "#6366F1",
+  },
+  {
+    id: "figma",
+    icon: icons.figma,
+    name: "Figma",
+    description: "Design & Prototyping Platform",
+    plans: [
+      {
+        id: "figma-free",
+        name: "Starter",
+        price: 0,
+        currency: "USD",
+        features: ["3 projects", "Unlimited viewers", "Basic features"],
+      },
+      {
+        id: "figma-professional",
+        name: "Professional",
+        price: 15.0,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "Unlimited projects",
+          "Unlimited files",
+          "Team libraries",
+          "Version history",
+        ],
+      },
+      {
+        id: "figma-organization",
+        name: "Organization",
+        price: 45.0,
+        currency: "USD",
+        billing: "Monthly",
+        features: [
+          "Workspaces",
+          "Advanced permissions",
+          "Priority support",
+          "SSO",
+        ],
+      },
+    ],
+    color: "#0ACE78",
+  },
+];
+
 export const HOME_SUBSCRIPTIONS: Subscription[] = [
   {
     id: "spotify",
