@@ -6,11 +6,8 @@ Oreo is a sleek, mobile-first subscription management app built with React Nativ
 
 ---
 
-## 📱 Screenshots
 
-> _Add your screenshots here_
 
----
 
 ## ✨ Features
 
